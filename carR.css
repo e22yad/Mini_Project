@@ -5,18 +5,26 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+
+
 :root {
     --main-bg-color: rgb(233, 237, 242);
   }
-body {
+
+
+
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../miniProject/Cars/car10.jpg') no-repeat;
+    background: url('../miniProject/Cars/car10.jpg'),url('../miniProject/Cars/Caprice2.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+
 header{
     position: fixed;
     top: 0;
@@ -81,7 +89,7 @@ header{
 .wrapper{
     position: relative;
     width: 400px;
-    height: 550px;
+    height: 400px;
     background: transparent;
     border: 2px solid rgba(255,255,255, .5);
     border-radius: 20px;
@@ -92,7 +100,7 @@ header{
     align-items: center;
     overflow: hidden;
     transform: scale(0);
-    transition: transform .1s ease ,height .2s ease;
+    transition: transform .5s ease ,height .2s ease;
 }
 
 .wrapper.active-popup {
@@ -101,7 +109,7 @@ header{
 
 
 .wrapper.active {
-    height: 400px;
+    height: 600px;
 
 
 
@@ -192,7 +200,7 @@ header{
     border: none;
     outline: none;
     font-size: 1em;
-    color: darkslategray;  /* ----Text Color */
+    color: rgb(255, 255, 255);  /* ----Text Color */
 }
 .input-box .icon{
     position: absolute;
