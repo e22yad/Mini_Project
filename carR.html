@@ -9,12 +9,13 @@
         <header>
             <h2 class="Logo">Logo</h2>
             <nav class="navigation">
-                
-                <a href="#">Home</a>
+               <a href="#">Home</a>
                 <a href="#">Services</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-                <button class="btnLogin-popup">Sign-up</button>
+                <button class="btnLogin-popup">Log-in</button>
+              
+                 
             </nav>
         </header>
         
@@ -23,23 +24,16 @@
                 <ion-icon name="close"></ion-icon>
             </span>
             <div class="form-box login">
-                <h2>Sign-up</h2>
-                <form action="tray.html">
+                <h2>Log-in</h2>  <!-- Log/sign -->
+                <form action=".#">
                   <div class="input-box">
                     <span  class="icon">
                       <ion-icon name="person"></ion-icon>
                       </span>
                     <input type="text" required>
-                    <label>User Name</label>
+                    <label>User Name</label> <!-- User Name -->
                 </div>
 
-                    <div class="input-box">
-                        <span  class="icon">
-                            <ion-icon name="mail"></ion-icon>
-                            </span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
                     
                     <div class="input-box">
                         <span  class="icon">
@@ -49,21 +43,44 @@
                         <label>Password</label>
                         
                     </div>
-                    <button type="submit" class="btn">Sign-up
-
-                    </button>
+                    <button type="submit" class="btn">Log-in </button> <!-- btn -->
                     <div class="login-register">
-                        <p> <a href="#"class="register-link">Admin Log-in</a></p>
+                        <p> <a href="#"class="register-link">Sign-up</a></p>
+
                     </div>
-                        
-          
+ 
                 </form>
             </div>
 
             
         <div class="form-box register">
-            <h2>Admin</h2>
-            <form action="tray.html">
+            <h2> Sign-up </h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <span  class="icon">
+                        <ion-icon name="fname"></ion-icon>
+                        </span>
+                    <input type="text" required>
+                    <label>First Name </label>
+                </div>
+
+                <div class="input-box">
+                    <span  class="icon">
+                        <ion-icon name="lname"></ion-icon>
+                        </span>
+                    <input type="text" required>
+                    <label>Last Name </label>
+                </div>
+
+                <div class="input-box">
+                    <span  class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                        </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
                 <div class="input-box">
                     <span  class="icon">
                         <ion-icon name="person"></ion-icon>
@@ -79,19 +96,23 @@
                     <label>Password</label>
                     
                 </div>
-                <button type="submit" class="btn">Login
-
-                </button>
+                <button type="submit" class="btn">Sign-up</button><!-- btn 2 -->
                 <div class="login-register">
-                    <p> <a href="#"class="login-link">sign-up</a></p>
-            
+                    <p> <a href="#"class="login-link">Log-in</a></p>
+                    
+
                 </div>
+                    
+               
             </form>
         </div>
         </div>
         
+       
+    
         <script src="carR.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
     </body>
 </html>
