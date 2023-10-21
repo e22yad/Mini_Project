@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>     
+body { 
+ 
+ font-family: Arial, sans-serif;  
+ background-color: black;  
+ margin: 0;  
+ padding: 0;  
+ }  
+ header {  
+ background-color: #333;  
+ color: #fff;  
+ text-align: center;  
+ padding: 10px 0;  
+ }  
+ main {  
+ margin: 50px auto;  
+ max-width: 800px;  
+ background-color: #fff;  
+ padding: 20px;  
+ border-radius: 10px;  
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+ }  
+ h1 {  
+ color: white;  
+ text-align: center;  
+ }  
+ p {  
+ color: black;  
+ text-align: center;  
+ }  
+ form {  
+ text-align: center;  
+ margin-top: 20px;  
+ }
+ table {  
+ width: 100%;  
+ border-collapse: collapse;  
+ margin-top: 20px;  
+ }  
+ th, td {  
+ border: 1px solid #ccc;  
+ padding: 10px;  
+ text-align: center;  
+ }  
+ th {  
+ background-color: #333;  
+ color: #fff;  
+ }
+footer{
+background-color: #333;  
+ color: white;  
+ text-align: center;  
+ padding: 100px 0;
+}
+        </style> 
+<header>
+<h1>About Us</h1> 
+ <nav> 
+ <ul> 
+ <li><a href="Log-In.html">Main Page</a></li> 
+ </ul> 
+ </nav> 
+ </header> 
+ <main> 
+ <section> 
+ <h1>About Us</h1> 
+ <p>We're a group of students who's working on mini project  
+for "Web Programming" Course</p> 
+ <br><br> 
+ <table> 
+ <tr> 
+ <td>Faris Yahya Mohammed</td> 
+ <td>202207234</td> 
+ </tr> 
+ <tr> 
+ <td>Eyad Eesa Makhaha</td> 
+ <td>202203697</td> 
+ </tr> 
+ <tr> 
+ <td>Mohammed Ashyab Qaisi</td> 
+ <td>202202634</td> 
+ </tr> 
+  <tr> 
+ <td>Sami Ali Abdu Hakami</td> 
+ <td>202201560</td> 
+ </tr>
+  <tr> 
+ <td>Rakan Ibrahim Al-Hakami</td> 
+ <td>202211033</td> 
+ </tr>
+ </table> 
+ </section> 
+  
+ </main> 
+ <footer> 
+ <p>&copy; 2023 Faris Yahya Mohammed, Eyad Eesa Makhaha, Mohammed Ashyab Qaisi, Sami Ali Abdu Hakami, Rakan Ibrahim Al-Hakami</p> 
+ </footer> 
+</body> 
+</html>
