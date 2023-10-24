@@ -11,7 +11,7 @@
             <nav class="navigation">
                <a href="#">Home</a>
                 <a href="#">Services</a>
-                <a href="#">About</a>
+                <a href="AboutUS.html">About</a>
                 <a href="#">Contact</a>
                 <button class="btnLogin-popup">Log-in</button>
               
@@ -25,12 +25,12 @@
             </span>
             <div class="form-box login">
                 <h2>Log-in</h2>  <!-- Log/sign -->
-                <form action=".#">
+                <form action="carR.php" method="post" >
                   <div class="input-box">
                     <span  class="icon">
                       <ion-icon name="person"></ion-icon>
                       </span>
-                    <input type="text" required>
+                    <input name="user_name" type="text" required>
                     <label>User Name</label> <!-- User Name -->
                 </div>
 
@@ -39,7 +39,7 @@
                         <span  class="icon">
                             <ion-icon name="lock-closed"></ion-icon>
                         </span>
-                        <input type="password" required>
+                        <input name="password"  type="password" required>
                         <label>Password</label>
                         
                     </div>
@@ -55,13 +55,13 @@
             
         <div class="form-box register">
             <h2> Sign-up </h2>
-            <form action="#">
+            <form action="carR.php">
 
                 <div class="input-box">
                     <span  class="icon">
                         <ion-icon name="fname"></ion-icon>
                         </span>
-                    <input type="text" required>
+                    <input type="text" name="user_name"  required>
                     <label>First Name </label>
                 </div>
 
