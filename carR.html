@@ -10,7 +10,7 @@
             <h2 class="Logo">Logo</h2>
             <nav class="navigation">
                <a href="#">Home</a>
-                <a href="#">Services</a>
+                <a href="carR1.php">Services</a>
                 <a href="AboutUS.html">About</a>
                 <a href="#">Contact</a>
                 <button class="btnLogin-popup">Log-in</button>
@@ -25,12 +25,14 @@
             </span>
             <div class="form-box login">
                 <h2>Log-in</h2>  <!-- Log/sign -->
-                <form action="carR.php" method="post" >
+                <form action="carR1.php" method="post" >
                   <div class="input-box">
                     <span  class="icon">
                       <ion-icon name="person"></ion-icon>
                       </span>
+
                     <input name="user_name" type="text" required>
+
                     <label>User Name</label> <!-- User Name -->
                 </div>
 
@@ -43,7 +45,8 @@
                         <label>Password</label>
                         
                     </div>
-                    <button type="submit" class="btn">Log-in </button> <!-- btn -->
+                    <button type="submit" value="login" class="btn">Log-in </button> <!-- btn -->
+                    
                     <div class="login-register">
                         <p> <a href="#"class="register-link">Sign-up</a></p>
 
@@ -55,23 +58,16 @@
             
         <div class="form-box register">
             <h2> Sign-up </h2>
-            <form action="carR.php">
+            <form action="signUP.php" method="post">
 
                 <div class="input-box">
                     <span  class="icon">
-                        <ion-icon name="fname"></ion-icon>
+                        <ion-icon name="person"></ion-icon>
                         </span>
-                    <input type="text" name="user_name"  required>
-                    <label>First Name </label>
+                    <input name="user_name2" type="text" required>
+                    <label>User Name</label>
                 </div>
-
-                <div class="input-box">
-                    <span  class="icon">
-                        <ion-icon name="lname"></ion-icon>
-                        </span>
-                    <input type="text" required>
-                    <label>Last Name </label>
-                </div>
+               
 
                 <div class="input-box">
                     <span  class="icon">
@@ -81,22 +77,16 @@
                     <label>Email</label>
                 </div>
 
-                <div class="input-box">
-                    <span  class="icon">
-                        <ion-icon name="person"></ion-icon>
-                        </span>
-                    <input type="text" required>
-                    <label>User Name</label>
-                </div>
+                
                 <div class="input-box">
                     <span  class="icon">
                         <ion-icon name="lock-closed"></ion-icon>
                     </span>
-                    <input type="password" required>
+                    <input name="password2" type="password" required>
                     <label>Password</label>
                     
                 </div>
-                <button type="submit" class="btn">Sign-up</button><!-- btn 2 -->
+                <button type="submit" value="Signup" class="btn">Signup</button><!-- btn 2 -->
                 <div class="login-register">
                     <p> <a href="#"class="login-link">Log-in</a></p>
                     
