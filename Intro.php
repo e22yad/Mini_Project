@@ -3,14 +3,14 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="Intro.css">
+<link rel="stylesheet" href="intro.css">
     <style>
         body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('car10.jpg')no-repeat;
+    background: url('../miniProject/Cars/car10.jpg')no-repeat;
     background-size: cover;
     background-position: center;
     background-color:black;   
@@ -27,7 +27,7 @@
     }
     .frame2 {
         position: absolute;
-    bottom: -550px;
+    bottom: -200px;
     
     width: 1000;
     margin: 20 ;
@@ -80,7 +80,7 @@ transform: scale(0.9);
     </div>
     <div class="frame2">
     <section class="container2" >
-        <form action="RentEla.html">
+        <form action="rent.html">
         <div class="Card">
             <div class="Card-imge car-1"></div>
               <h1>Elantra</h1>
@@ -130,4 +130,3 @@ transform: scale(0.9);
 
 </body>
 </html>
-
