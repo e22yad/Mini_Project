@@ -42,7 +42,7 @@ echo "<br>Record Updated";
 if (isset($_POST['showrecords']))
 {
 echo "<table border='1'>";
-$sql="select * from student";
+$sql="select * from usres";
 
 $data=mysqli_query($conn,$sql);
 if(!$data)
