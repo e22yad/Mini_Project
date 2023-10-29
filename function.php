@@ -4,7 +4,7 @@
 function check_login($conn)
 {
 
-	if(isset($_SESSION['user_id']))
+	if(isset($_SESSION['user_name']))
 	{
 
 		$id = $_SESSION['user_id'];
@@ -13,14 +13,16 @@ function check_login($conn)
 		$result = mysqli_query($conn,$query);
 		if($result && mysqli_num_rows($result) > 0)
 		{
-
-			$user_data = mysqli_fetch_assoc($result);
+			$id2 = $_SESSION['user_name'];
+			$query2 = "select * from users where user_name = '$id' limit 1";
+			$result = mysqli_query($conn,$query2);
+			$user_data = mysqli_fetch_assoc($result2);
 			return $user_data;
 		}
 	}
 
 	//redirect to login
-	header("Location:#");
+	header("Location: rent.html");
 	//
 
 }
