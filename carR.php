@@ -1,6 +1,6 @@
 <?php 
 
-session_start();
+
 
 	include("connection.php");
 	include("function.php");
@@ -18,6 +18,7 @@ session_start();
 			//read from database
 			$query = "select * from users where user_name = '$user_name' limit 1";
 			$result = mysqli_query($conn, $query);
+			
 
 			if($result)
 			{
@@ -26,6 +27,17 @@ session_start();
 
 					$user_data = mysqli_fetch_assoc($result);
 					
+					if($user_data['password'] === $password)
+                    {
+    
+                        if($user_data["rank"]=="admin")
+                        {
+							header("Location: Admin.html");
+						die;
+                        }
+					}
+                    
+
 					if($user_data['password'] === $password)
 					{
 
