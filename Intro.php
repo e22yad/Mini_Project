@@ -1,23 +1,32 @@
+<?php
+session_start();
 
+    include("connection.php");
+	include("function.php");
+    
+    
+?>
 
 <html>
 
 <head>
-<link rel="stylesheet" href="Intro.css">
+<link rel="stylesheet" href="intro.css">
     <style>
         body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('car10.jpg')no-repeat;
+    background: url('../miniProject/Cars/GTR2.jpg')no-repeat;
     background-size: cover;
     background-position: center;
     background-color:black;   
 }
     .frame {
+        position: absolute;
+        top: 330px;
     width: 50%;
-    margin: 100px auto;
+    margin: -120px auto;
     border: 2px solid #000;
     padding: 20px;
     background-color: tranparnt;
@@ -39,7 +48,7 @@
     
         
    .card{
-    background-color: rgb(74, 78, 159);
+    background-color: rgb(79, 167, 222);
     width: 270px;
     height: 300px;
     margin: 10px;
@@ -72,6 +81,12 @@ transform: scale(0.9);
     <div class="frame">
         <h1 style="color:white; text-align:center;"> Welcome Dear Coustomer</h1>
         <p style=" color:white; text-align:center;">Get Ready to Hit the Road  Welcome to our company for intel cars!.</p>
+        <span>
+            <?php
+            
+            echo "Welcome ".$_SESSION['user_name'];
+            ?>
+        </span>
         <div class="centered-link">
         <a href="carR.html">Main Page</a>
         
@@ -80,7 +95,7 @@ transform: scale(0.9);
     </div>
     <div class="frame2">
     <section class="container2" >
-        <form action="RentEla.html">
+        <form action="rent.html">
         <div class="Card">
             <div class="Card-imge car-1"></div>
               <h1>Elantra</h1>
@@ -95,7 +110,23 @@ transform: scale(0.9);
 </button>
         </div>
             </form>
-           <form action="RentGtr.html">
+           
+               <form action="RentSo.html">
+        <div class="Card">
+            <div class="Card-imge car-3"></div>
+              <h1>Subaru</h1>
+              <br><br> &#160;
+              <button action="carR.html">
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+    <span class="circle4"></span>
+    <span class="circle5"></span>
+    <span class="text">Rent</span>
+</button>
+        </div>
+    </form>
+    <form action="RentGtr.html">
         <div class="Card">
             <div class="Card-imge car-2"></div>
               <h1>GTR</h1>
@@ -110,22 +141,6 @@ transform: scale(0.9);
 </button>
         </div>
            </form>
-               <form action="RentSo.html">
-        <div class="Card">
-            <div class="Card-imge car-3"></div>
-              <h1>Subaru</h1>
-              <br><br> &#160;
-              <button>
-    <span class="circle1"></span>
-    <span class="circle2"></span>
-    <span class="circle3"></span>
-    <span class="circle4"></span>
-    <span class="circle5"></span>
-    <span class="text">Rent</span>
-</button>
-        </div>
-    </form>
-        
     </section>
 
 </body>
