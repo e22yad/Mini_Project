@@ -32,7 +32,7 @@ $conn= mysqli_connect($servername,$username,$password);
 
   if (isset($_POST['update']))
 {
-  $sql="update users set user_name = '".$user_name."', password = " . $password. " where user_id = " . $user_id;
+  $sql="update users set user_name = '".$user_name."', password = '" . $password. "' where user_id = " . $user_id;
  if(mysqli_query($conn,$sql))
  echo "<br>item Updated";
 }
