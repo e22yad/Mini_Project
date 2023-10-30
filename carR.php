@@ -1,6 +1,6 @@
 <?php 
 
-
+session_start();
 
 	include("connection.php");
 	include("function.php");
@@ -11,6 +11,7 @@
 		//something was posted
 		$user_name = $_POST['user_name'];
 		$password = $_POST['password'];
+		
 
 		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
 		{
@@ -29,10 +30,11 @@
 					
 					if($user_data['password'] === $password)
                     {
-    
+                         
                         if($user_data["rank"]=="admin")
                         {
-							header("Location: Admin.html");
+							$_SESSION['user_name'] = $user_data['user_name'];
+							header("Location: admin1.php");
 						die;
                         }
 					}
@@ -41,7 +43,7 @@
 					if($user_data['password'] === $password)
 					{
 
-						$_SESSION['user_id'] = $user_data['user_id'];
+						$_SESSION['user_name'] = $user_data['user_name'];
 						header("Location: intro.php");
 						die;
 					}
