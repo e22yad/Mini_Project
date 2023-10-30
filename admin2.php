@@ -4,9 +4,9 @@ $user_name = $_POST['user_name'];
 $password = $_POST['password'];
 $servername="localhost";
 $username="root";
-$password="";
+$password1="";
   echo "<h1>Database Handling</h1>";
-$conn= mysqli_connect($servername,$username,$password);
+$conn= mysqli_connect($servername,$username,$password1);
   if ($conn)
  echo "<br>Connected successfully";
  else
@@ -20,21 +20,21 @@ $conn= mysqli_connect($servername,$username,$password);
 {
   $sql="insert into users(user_id, user_name, password) values('".$user_id."', '".$user_name."' ,'".$password."')";
   if(mysqli_query($conn,$sql))
- echo "<br>Item Saved";
+ echo "<br>user Saved";
  }
 
   if (isset($_POST['delete']))
 {
   $sql="delete from users where user_id = " .$user_id;
   if(mysqli_query($conn,$sql))
- echo "<br>item Deleted";
+ echo "<br>user Deleted";
 }
 
   if (isset($_POST['update']))
 {
   $sql="update users set user_name = '".$user_name."', password = '" . $password. "' where user_id = " . $user_id;
  if(mysqli_query($conn,$sql))
- echo "<br>item Updated";
+ echo "<br>user Updated";
 }
 if (isset($_POST['showrecords']))
 {
