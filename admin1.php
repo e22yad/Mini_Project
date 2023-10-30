@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -50,14 +49,14 @@ include("function.php");
 
             
 <div class="wrapper">
-    <form action = "admin.php" method ="post">
+    <form action = "admin2.php" method ="post">
         
         
             <h3>Users Info</h3>
             
-            <label>User ID</label><br> <input type = "text" name= "user_id" class="Inb">
-            <br><label>User Name</label><br> <input type = "text" name= "user_name" class="Inb">
-            <br><label>Password</label><br> <input type = "text" name= "password" class="Inb">
+            <label>User ID</label><br> <input type = "text" name= "user_id" class="Inb"/>
+            <br><label>User Name</label><br> <input type = "text" name= "user_name" class="Inb"/>
+            <br><label>Password</label><br> <input type = "text" name= "password" class="Inb"/>
         
         
             
