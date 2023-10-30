@@ -17,7 +17,7 @@ session_start();
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../miniProject/Cars/GTR2.jpg')no-repeat;
+    background: url('../miniProject/Cars/Lambo.jpg')no-repeat;
     background-size: cover;
     background-position: center;
     background-color:black;   
@@ -95,7 +95,7 @@ transform: scale(0.9);
     </div>
     <div class="frame2">
     <section class="container2" >
-        <form action="rent.html">
+        <form action="RentEla.html">
         <div class="Card">
             <div class="Card-imge car-1"></div>
               <h1>Elantra</h1>
